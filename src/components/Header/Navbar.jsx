@@ -17,8 +17,8 @@ const Navbar = () => {
     ];
 
     return (
-        <nav>
-            <div className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
+        <nav className="w-11/12 mx-auto p-4">
+            <div className="md:hidden p-4 text-2xl" onClick={() => setOpen(!open)}>
                 {/* applying an conditions */}
                 {/* when open show cross icon and when closed show menu bar icon */}
                 {
@@ -26,7 +26,7 @@ const Navbar = () => {
                 }
 
             </div>
-            <ul className="md:flex p-4">
+            <ul className={`md:flex  p-5 absolute md:static rounded-xl bg-gray-800 duration-1000 ${open ? 'top-20' : '-top-60'}`}>
                 {/* mapping routes data */}
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
