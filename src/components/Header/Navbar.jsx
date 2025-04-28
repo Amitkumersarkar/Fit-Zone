@@ -1,6 +1,12 @@
+import { useState } from "react";
 import Link from "../Link/Link";
-
+import { BsFillMenuButtonFill } from "react-icons/bs";
+import { GiSkullCrossedBones } from "react-icons/gi";
 const Navbar = () => {
+
+    // declared state for toggling menubar
+    const [open, setOpen] = useState(false);
+
     // navbar data
     const routes = [
         { id: 1, path: "/", name: "Home" },
@@ -12,6 +18,14 @@ const Navbar = () => {
 
     return (
         <nav>
+            <div className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
+                {/* applying an conditions */}
+                {/* when open show cross icon and when closed show menu bar icon */}
+                {
+                    open === true ? <GiSkullCrossedBones /> : <BsFillMenuButtonFill />
+                }
+
+            </div>
             <ul className="md:flex p-4">
                 {/* mapping routes data */}
                 {
