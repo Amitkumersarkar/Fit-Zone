@@ -46,26 +46,28 @@ const PriceOptions = () => {
                 "Family group classes"
             ]
         },
-        {
-            "id": 5,
-            "name": "Student Membership",
-            "price": 24.99,
-            "features": [
-                "Access during staffed hours",
-                "Locker room access",
-                "Discounted group classes",
-                "Student ID required"
-            ]
-        }
+        // {
+        //     "id": 5,
+        //     "name": "Student Membership",
+        //     "price": 24.99,
+        //     "features": [
+        //         "Access during staffed hours",
+        //         "Locker room access",
+        //         "Discounted group classes",
+        //         "Student ID required"
+        //     ]
+        // }
     ]
     return (
-        <div>
-            <h2 className="text-4xl w-11/12 mx-auto p-4">
+        <div className="w-8/12 mx-auto">
+            <h2 className="text-6xl font-bold text-center p-4 m-8">
                 Best Features With Best Prices In The Town</h2>
-            {/* dynamic */}
-            {
-                priceOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
-            }
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 text-center gap-5">
+                {/* dynamic */}
+                {
+                    priceOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
+                }
+            </div>
         </div>
     );
 };

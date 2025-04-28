@@ -17,7 +17,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="w-11/12 mx-auto p-4">
+        <nav className=" text-xl p-4">
             <div className="md:hidden p-4 text-2xl" onClick={() => setOpen(!open)}>
                 {/* applying an conditions */}
                 {/* when open show cross icon and when closed show menu bar icon */}

@@ -5,11 +5,13 @@ import PriceOptions from './components/PriceOptions/PriceOptions'
 function App() {
 
   return (
-    <>
+    <div className='w-11/12 mx-auto p-3'>
 
       <Navbar></Navbar>
       <PriceOptions></PriceOptions>
-    </>
+    </div>
+
+
   )
 }
 
