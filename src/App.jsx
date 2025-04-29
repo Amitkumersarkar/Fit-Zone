@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Header/Navbar'
 import PriceOptions from './components/PriceOptions/PriceOptions'
+import LChart from './LineChart/LChart'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
 
       <Navbar></Navbar>
       <PriceOptions></PriceOptions>
+      <LChart></LChart>
     </div>
 
 
