@@ -10,7 +10,7 @@ const LChart = () => {
 
 
     return (
-        <div className='w-8/12 mx-auto  mt-10 p-4'>
+        <div className='flex justify-center  mt-10 p-4'>
             <LineChart width={700} height={900} data={students}>
                 <XAxis dataKey="name" />
                 <YAxis />

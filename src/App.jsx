@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer/Footer'
 import Navbar from './components/Header/Navbar'
 import PriceOptions from './components/PriceOptions/PriceOptions'
 import LChart from './LineChart/LChart'
@@ -11,6 +12,7 @@ function App() {
       <Navbar></Navbar>
       <PriceOptions></PriceOptions>
       <LChart></LChart>
+      <Footer></Footer>
     </div>
 
 
